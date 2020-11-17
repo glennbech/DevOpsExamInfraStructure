@@ -1,11 +1,11 @@
 resource "google_cloud_run_service" "default" {
-  name     = "cloudrun-srv"
+  name     = "cloudrun-srvv2"
   location = "us-central1"
 
   template {
     spec {
       containers {
-        image = "gcr.io/cloudrun/devops"
+        image = "gcr.io/devopsexam-295512/devops-exam-code-new:2f9a6da179674ae1d3d9da39aff61d4967bf63e3"
       }
     }
   }
