@@ -26,6 +26,8 @@ install: true
 script:
 - |-
   set -ex;
+  export TF_VAR_LOGZ_TOKEN=${LOGZ_TOKEN}
+  export TF_VAR_LOGZ_URL=${LOGZ_URL}
   terraform init
   terraform plan
   terraform apply --auto-approve
