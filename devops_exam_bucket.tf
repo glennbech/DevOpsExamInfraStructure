@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "static-site-maniac123" {
+resource "google_storage_bucket" "static-site-mania" {
   project = var.project_id
   name = "devops-exam-code-new"
   location = "EU"
