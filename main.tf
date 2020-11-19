@@ -1,6 +1,7 @@
 resource "google_cloud_run_service" "default" {
   name     = "cloudrun-srv-v2"
   location = "us-central1"
+  project  = "devopsexam-295512"
 
   template {
     spec {
@@ -16,6 +17,10 @@ resource "google_cloud_run_service" "default" {
         }
       }
     }
+  }
+  traffic {
+    percent = 100
+    latest_revision = true
   }
 }
 
