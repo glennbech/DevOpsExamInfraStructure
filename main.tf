@@ -1,12 +1,12 @@
 resource "google_cloud_run_service" "default" {
-  name     = "cloudrun-srv-v3"
+  name     = "cloudrun-srv-v4"
   location = "us-central1"
   project  = "devopsexam-295512"
 
   template {
     spec {
       containers {
-        image = "gcr.io/devopsexam-295512/devops-exam-code-new:0ae22e6780a125511abb5fd4f83bd8468bc30868"
+        image = "gcr.io/devopsexam-295512/devops-exam-code-new:721ebedf2ebc7f40b7cc134be136587a3b8bc6ea"
         env {
           name = "LOGZ_TOKEN"
           value = var.LOGZ_TOKEN
