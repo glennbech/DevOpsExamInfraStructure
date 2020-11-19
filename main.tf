@@ -5,7 +5,15 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "gcr.io/devopsexam-295512/devops-exam-code-new:2f9a6da179674ae1d3d9da39aff61d4967bf63e3"
+        image = "gcr.io/devopsexam-295512/devops-exam-code-new:7988dd0bf672b43a86b3cc64d6fa4d8f4ffca31c"
+        env {
+          name = "LOGZ_TOKEN"
+          value = var.LOGZ_TOKEN
+        }
+        env {
+          name = "LOGZ_URL"
+          value = var.LOGZ_URL
+        }
       }
     }
   }
