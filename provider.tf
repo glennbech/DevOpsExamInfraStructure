@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "maniac"
+    bucket = "maniac-mania-v1"
     prefix = "terraformstate"
     credentials = "terraform.json"
   }

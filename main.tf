@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "default" {
-  name     = "cloudrun-srv-v2"
+  name     = "cloudrun-srv-v3"
   location = "us-central1"
   project  = "devopsexam-295512"
 
