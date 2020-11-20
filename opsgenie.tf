@@ -17,7 +17,7 @@ resource "opsgenie_user" "second" {
 }
 
 resource "opsgenie_team" "team1" {
-  name        = "example"
+  name        = "self-service"
   description = "This team deals with all the things"
 
   member {
