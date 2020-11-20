@@ -7,5 +7,5 @@ resource "statuscake_test" "googlecloudruntest" {
   website_url  = google_cloud_run_service.default.status[0].url
   test_type    = "HTTP"
   check_rate   = 100
-  contact_group= ["svr-exam-notification"]
+  contact_group= ["195349"]
 }
