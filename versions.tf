@@ -9,6 +9,9 @@ terraform {
     statuscake = {
       source = "terraform-providers/statuscake"
     }
+    opsgenie = {
+      source = "opsgenie/opsgenie"
+    }
   }
   required_version = ">= 0.13"
 }
