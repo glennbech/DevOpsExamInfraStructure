@@ -18,7 +18,7 @@ resource "opsgenie_user" "second" {
 
 resource "opsgenie_team" "team1" {
   name        = "self-service"
-  description = "This team deals with all the things"
+  description = "This team deals with all aspects of this project"
 
   member {
     id   = opsgenie_user.first.id
@@ -33,7 +33,7 @@ resource "opsgenie_team" "team1" {
 
 resource "opsgenie_team" "self-service" {
   name           = "Self service team"
-  description    = "Membership in this team is managed via OpsGenie web UI only"
+  description    = "Membership in this team is managed by OpsGenie web view only"
   ignore_members = true
   delete_default_resources = true
 }
